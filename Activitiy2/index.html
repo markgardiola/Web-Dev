@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <div class="modal fade" id="packages-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Tour Packages</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="row">
+              <div class="form-floating">
+                <ul id="tour-packages" class="list-group">
+                  <li class="list-group-item">The Castles - ₱ 1,500</li>
+                  <li class="list-group-item">Cocoons at Club Laiya - ₱ 3,600</li>
+                  <li class="list-group-item">The Magestic Taal Volcano - ₱ 1,650</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="nav-link packages me-auto" href="#packages">See more</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+            now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fs-3 text-warning" href="index.html">Ala-Eh-scape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#batangas-carousel">Home</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="modal" data-bs-target="#packages-modal">Packages</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fqa">FAQ's</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="modal fade" id="booking-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Book a Tour</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row g-2">
+                <div class="form-floating mb-2 col-sm-6">
+                  <input id="email1" type="email" class="form-control" placeholder="Your email address">
+                  <label for="email1" class="ms-2">Email address</label>
+                </div>
+                <div class="form-floating col-sm-6">
+                  <select id="select1" class="form-select">
+                    <option>The Castles - ₱ 1,500</option>
+                    <option>Cocoons at Club Laiya - ₱ 3,600</option>
+                    <option>The Magestic Taal Volcano - ₱ 1,650</option>
+                  </select>
+                  <label for="select1" class="ms-2">Pick a tour</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#packages-modal">See tour
+              packages</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning">Check out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="batangas-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#batangas-carousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#batangas-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#batangas-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item" data-bs-interval="8000">
+          <img src="https://res.klook.com/image/upload/activities/ajmjfwudso0slyv3ds55.webp" class="d-block w-100 c-img"
+            alt="...">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-2 mt-5 text-uppercase">step into a fairytale</p>
+            <h1 class="display-1 fw-bolder text-capitalize">the castles</h1>
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-5 text-capitalize" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">book a tour now!</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="5000">
+          <img
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/606754890.jpg?k=52c10bb4264369337db7f0cb805d571ecdf099f4eee1419116d9fe5a5e52915d&o=&s=1024x"
+            class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-2 mt-5 text-uppercase">the perfect getaway!</p>
+            <h1 class="display-1 fw-bolder">Cocoons at Club Laiya Resort</h1>
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-3 text-capitalize" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">book a tour now!</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="5000">
+          <img src="https://jamescarveronline.com/wp-content/uploads/2017/01/tagaytay-volcano.jpg"
+            class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-2 mt-1 text-uppercase">discover the beauty of</p>
+            <h1 class="display-1 fw-bolder text-capitalize">the majestic taal volcano</h1>
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-3 text-capitalize" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">book a tour now!</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#batangas-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#batangas-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="overview">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <div class="col-lg">
+            <i class="bi bi-airplane-fill me-1"></i>
+            3 amazing destinations
+          </div>
+          <div class="col-lg">
+            <i class="bi bi-wallet-fill me-1"></i>
+            Travel now, Pay Later. 
+          </div>
+          <div class="col-lg">
+            <i class="bi bi-patch-check-fill me-1"></i>
+            1000's of customers
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="packages" class="text-center">
+      <h2 class="p-5 my-3">Packages</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-image">
+                <img src="https://res.klook.com/image/upload/activities/ajmjfwudso0slyv3ds55.webp" class="card-img-top"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">the castles</h5>
+                <p class="card-text">Explore the enchanting "Fantasy World!" castles in Tanauan, Batangas,
+                  with our PHP 1,500 tour package! This includes transportation, entrance,
+                  and a guided tour, perfect for a magical day of sightseeing and photos.
+                  Step into a fairy tale and capture unforgettable memories!</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Book now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-image">
+                <img
+                  src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/606754890.jpg?k=52c10bb4264369337db7f0cb805d571ecdf099f4eee1419116d9fe5a5e52915d&o=&s=1024x"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cocoons at Club Laiya Resort</h5>
+                <p class="card-text">Discover the unique "Cocoons" at Club Laiya Resort! These cozy,
+                  pod-style accommodations offer a relaxing beachfront experience with modern amenities.
+                  Our PHP 3,600 package includes all access to the resort's facilities, perfect for a peaceful getaway
+                  or a fun weekend with friends.</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Book now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-image">
+                <img src="https://jamescarveronline.com/wp-content/uploads/2017/01/tagaytay-volcano.jpg"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">the magestic taal volcano</h5>
+                <p class="card-text">Experience the majesty of "Taal Volcano!"", one of the Philippines'
+                  most iconic natural wonders! Our PHP 1,650 package includes round-trip transportation,
+                  entrance fees, and experience a day filled with scenic landscapes, a trek to the crater,
+                  and breathtaking photo opportunities. Perfect for adventure seekers and nature lovers.</p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fqa" class="py-md-5 text-center">
+      <h2 class="my-3">FQA's</h2>
+      <div class="container">
+        <div class="accordion w-75 mx-auto" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                How do I book a tour or accommodation through your system?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">To book a tour or accommodation, browse our list of available options for
+                Batangas destinations, select your preferred spot, date, and package, then follow the booking prompts.
+                You can make secure payments online, and once confirmed, you’ll receive a booking confirmation with all
+                necessary details.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Can I cancel or modify my booking?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes, you can modify or cancel your booking through your account or by
+                contacting our support team. Please note that cancellations or changes may be subject to specific
+                policies, and fees may apply depending on the timing of your request.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What happens if there’s bad weather on the day of my booking?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">In cases of severe weather, we work closely with our partners to ensure the
+                safety of all guests. If your tour or stay needs to be rescheduled, we will contact you with options to
+                either reschedule or receive a refund, depending on the circumstances and availability.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark py-5 mt-5">
+    <div class="container text-light text-center">
+      <p class="display-5 mb-3 text-warning">
+        Ala-Eh-scape
+      </p>
+      <small class="text-white-50">&copy; Copyright by markgardiola. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

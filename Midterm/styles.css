@@ -1,0 +1,11 @@
+body {
+  background-color:rgba(66, 66, 66, 1);
+}
+
+.imgContainer {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: lightgrey;
+  border-radius: 200px;
+}
