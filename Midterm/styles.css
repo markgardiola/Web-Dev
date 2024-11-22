@@ -1,0 +1,17 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(66, 66, 66, 1);
+  background-image: url(https://dmarket.com/blog/best-dota2-wallpapers/dota2heroes3_hu3043563290790956756.jpg);
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-title, .card-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.pagination .page-link {
+  font-family: 'Poppins', sans-serif;
+}
