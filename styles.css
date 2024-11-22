@@ -20,10 +20,6 @@ body {
   border-radius: 20px;
 }
 
-.nav-link:hover {
-  font-size: 25px !important;
-}
-
 .nav-link:active {
   color: black !important;
   border-radius: 25px;
