@@ -1,0 +1,39 @@
+body {
+  font-family: Poppins, serif;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+.error {
+  text-shadow: 1px 4px 10px grey;
+  filter: blur(0.4px);
+}
+
+.error-code {
+  font-family: Roboto Mono, monospace;
+  font-weight: bold;
+  font-size: 210px;
+  text-shadow:
+  0px 180px 10px rgb(126, 126, 126),
+  0px 120px 10px rgb(161, 161, 161),
+  0px 60px 10px rgb(202, 202, 202);
+  filter: blur(2px);
+}
+
+.error-message{
+  font-weight: light;
+  text-shadow:
+  0px 35px 2px rgb(126, 126, 126),
+  0px 25px 2px rgb(161, 161, 161),
+  0px 15px 2px rgb(202, 202, 202);
+  word-spacing: 40px;
+  filter: blur(1px);
+}
+
+.btn {
+  border-radius: 20px;
+  padding-right: 50px;
+  margin-top: 100px;
+}
