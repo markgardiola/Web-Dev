@@ -12,7 +12,7 @@ body {
 .error-code {
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
-  font-size: 210px;
+  font-size: 200px;
   text-shadow:
     0px 180px 10px rgb(126, 126, 126),
     0px 120px 10px rgb(161, 161, 161),
