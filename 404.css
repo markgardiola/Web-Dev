@@ -12,18 +12,19 @@ body {
 .error-code {
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
-  font-size: 200px;
+  font-size: 120px;
   text-shadow:
     0px 180px 10px rgb(126, 126, 126),
     0px 120px 10px rgb(161, 161, 161),
     0px 60px 10px rgb(202, 202, 202);
+  word-spacing: none;
   filter: blur(2px);
 }
 
 .error-message {
-  padding-top: 120px;
+  padding-top: 160px;
   padding-bottom: 50px;
-  font-weight: lighter;
+  font-weight: 280;
   text-shadow:
     0px 35px 2px rgb(126, 126, 126),
     0px 25px 2px rgb(161, 161, 161),
@@ -35,4 +36,6 @@ body {
 
 .btn {
   border-radius: 25px;
+  text-shadow: -1px 1px 1px grey;
+  box-shadow: 3px 3px 10px grey;
 }
