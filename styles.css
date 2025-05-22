@@ -40,10 +40,9 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.btn:hover {
-  font-size: 18px !important;
-}
-
-.btn:active {
-  opacity: 0.1;
+.fixed-height {
+  height: 200px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
